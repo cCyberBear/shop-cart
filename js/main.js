@@ -2006,9 +2006,12 @@ compareProducts.map((val,idx)=> {
   <td>${val.sprice}</td>
   `).appendTo(".priceT");
   $(`
+  <td><button class="add" data-id = ${val.id}>ADD TO CART</button></td>
+  `).appendTo(".addT");
+  $(`
   <td>${val.description}</td>
   `).appendTo(".descriptionT");
-    $(`
+  $(`
   <td>-</td>
   `).appendTo(".skuT");
   $(`
@@ -2023,4 +2026,10 @@ compareProducts.map((val,idx)=> {
   $(`
   <td>Defaut</td>
   `).appendTo(".colorT");
+});
+
+//close-compare
+$(".fa-times").click(function (e) { 
+  e.preventDefault();
+  $(".compare").fadeOut();
 });

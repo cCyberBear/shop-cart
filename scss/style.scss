@@ -1963,6 +1963,7 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+
   &-box {
     display: block;
     position: absolute;
@@ -1981,8 +1982,8 @@ footer{
     margin: 10px;
     border-radius: 5px;
     box-shadow: 0px 0px -3px 1px rgb(0, 0, 0);
-    position: relative;
     overflow: hidden;
+    position: relative;
   }
   &-header{
     margin: 10px;
@@ -1996,19 +1997,40 @@ footer{
     }
   }
   &-middle{
+    overflow-y: scroll;
+    height: 87%;
     table, th, td {
       border: 2px solid #e8e8e8;
       border-collapse: collapse;
+
     } 
     table{
       margin: 20px;
       width: calc(100% - 40px) !important ;
       td {
         text-align: center;
+        background: #f7f7f7;
       }
       th{
         text-align: left;
         background: #f2f2f2;
+        padding: 15px;
+
+      }
+      img{
+        width: 20%;
+        border: 2px solid grey;
+        margin: 20px;
+      }
+      button{
+        background: #4f4f4f;
+        color: white;
+        border: 1px solid black;
+        padding: 7px 20px;
+        transition: all 0.3s;
+        &:hover{
+          background: #868686;
+        }
       }
     }
   }

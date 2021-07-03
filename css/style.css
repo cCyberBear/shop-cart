@@ -1878,6 +1878,11 @@ footer .copyright .container img {
 	color: white;
 }
 
+.compare-middle {
+	overflow-y: scroll;
+	height: 87%;
+}
+
 .compare-middle table,
 .compare-middle th,
 .compare-middle td {
@@ -1892,11 +1897,31 @@ footer .copyright .container img {
 
 .compare-middle table td {
 	text-align: center;
+	background: #f7f7f7;
 }
 
 .compare-middle table th {
+	padding: 15px;
 	text-align: left;
 	background: #f2f2f2;
+}
+
+.compare-middle table img {
+	width: 20%;
+	margin: 20px;
+	border: 2px solid grey;
+}
+
+.compare-middle table button {
+	padding: 7px 20px;
+	transition: all .3s;
+	color: white;
+	border: 1px solid black;
+	background: #4f4f4f;
+}
+
+.compare-middle table button:hover {
+	background: #868686;
 }
 
 .compare-close {
