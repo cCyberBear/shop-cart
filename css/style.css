@@ -1834,7 +1834,7 @@ footer .copyright .container img {
 	z-index: 1000;
 	top: 0;
 	left: 0;
-	display: flex;
+	display: none;
 	width: 100%;
 	height: 100%;
 	background: rgba(0, 0, 0, .9);
@@ -1906,10 +1906,27 @@ footer .copyright .container img {
 	background: #f2f2f2;
 }
 
+.compare-middle table .removeT p {
+	cursor: pointer;
+	align-items: center;
+}
+
+.compare-middle table .removeT p i {
+	color: red;
+}
+
 .compare-middle table img {
 	width: 20%;
 	margin: 20px;
 	border: 2px solid grey;
+}
+
+.compare-middle table .priceT td {
+	text-decoration: underline;
+}
+
+.compare-middle table .availabilityT td {
+	color: #090;
 }
 
 .compare-middle table button {

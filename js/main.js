@@ -1969,35 +1969,97 @@ $('.shop').hover(function() {
 });
 
 //compare
-const compareProducts = [
-  {
-      "id":1,
-      "name":"Bottol Gaurd (Lauki)",
-      "img":"http://demo.roadthemes.com/safira/electronic/wp-content/uploads/2020/09/9-400x400.jpg",
-      "sale":"Sale!",
-      "type":"BROAD BEANS",
-      "star":"<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i>",
-      "uprice":"$85.00",
-      "price":60, 
-      "sprice":"$60.00",  
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, animi distinctio. Obcaecati tenetur molestiae, suscipit necessitatibus, veniam quos earum est vero deleniti sunt qui modi quod quae rem nulla architecto!"
-  },
-  {
-      "id":2,
-      "name":"Germany Chilles Local",
-      "img":"http://demo.roadthemes.com/safira/electronic/wp-content/uploads/2020/09/11-400x400.jpg",
-      "sale":"Sale!",
-      "type":"GREEN PEAS",
-      "star":"<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i>",
-      "uprice":"",
-      "price":95, 
-      "sprice":"$95.00",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, animi distinctio. Obcaecati tenetur molestiae, suscipit necessitatibus, veniam quos earum est vero deleniti sunt qui modi quod quae rem nulla architecto!"
-  },
-]
+const compareProducts = [];
+//add to compare
+
+$(document).on("click",".fa-sync-alt", function (e) {
+  e.preventDefault();
+  const id = $(this).parents(".item").data("id");
+  const ind = compareProducts.findIndex((val) => val.id === id)
+  if(ind !== -1){
+    compareProducts[ind].quantity = compareProducts[ind].quantity + 1;
+  } else {
+    // add product to compareProducts 
+    if(id <= 12 ){
+      const product = products.find( (val) => val.id === id)
+      compareProducts.push( {...product, quantity: 1, description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat similique fugiat ipsam tenetur, iure at adipisci tempore voluptas nemo blanditiis tempora quae. Alias similique dolorum sed officiis fugiat provident."});
+    } else if(id > 12 && id <= 24) {
+      const product = newproducts.find( val => val.id === id)
+      compareProducts.push( {...product, quantity: 1, description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat similique fugiat ipsam tenetur, iure at adipisci tempore voluptas nemo blanditiis tempora quae. Alias similique dolorum sed officiis fugiat provident."});
+
+    } else {
+      const product = rate.find( (val) => val.id === id)
+      compareProducts.push( {...product, quantity: 1, description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat similique fugiat ipsam tenetur, iure at adipisci tempore voluptas nemo blanditiis tempora quae. Alias similique dolorum sed officiis fugiat provident."});
+
+    }
+  }
+  $(".compare").css("display", "flex");
+  renderCompare();
+});
+$(document).on("click",".remove",function () {
+  const id = $(this).parents("p").data("id")
+  const idx = compareProducts.findIndex((val) => val.id === id)
+  compareProducts.splice(idx, 1);
+  renderCompare();
+});
+function renderCompare() {
+  //empty
+  $("td").remove();
+  //map
+  compareProducts.map((val,idx)=> {
+    $(`
+    <td>
+      <p class="remove" data-id=${val.id}>
+      Remove <i class="fas fa-times"></i>
+      </p>
+    </td>
+    `).appendTo(".removeT");
+    $(`
+    <td>
+      <img src="${val.img}" alt="">
+    </td>
+    `).appendTo(".imgT");
+    $(`
+    <td>${val.name}</td>
+    `).appendTo(".titleT");
+    $(`
+    <td>${val.sprice}</td>
+    `).appendTo(".priceT");
+    $(`
+    <td><button class="add" data-id = ${val.id}>ADD TO CART</button></td>
+    `).appendTo(".addT");
+    $(`
+    <td>${val.description}</td>
+    `).appendTo(".descriptionT");
+    $(`
+    <td>-</td>
+    `).appendTo(".skuT");
+    $(`
+    <td>Out of stock</td>
+    `).appendTo(".availabilityT");
+    $(`
+    <td>-</td>
+    `).appendTo(".weightT");
+    $(`
+    <td>N/A</td>
+    `).appendTo(".demensionsT");
+    $(`
+    <td>Defaut</td>
+    `).appendTo(".colorT");
+  });
+}
 compareProducts.map((val,idx)=> {
   $(`
-  <td><img src="${val.img}" alt=""></td>
+  <td>
+    <p class="remove" data-id=${val.id}>
+    Remove <i class="fas fa-times"></i>
+    </p>
+  </td>
+  `).appendTo(".removeT");
+  $(`
+  <td>
+    <img src="${val.img}" alt="">
+  </td>
   `).appendTo(".imgT");
   $(`
   <td>${val.name}</td>
