@@ -1153,6 +1153,7 @@ header nav.resnav > ul > li:nth-child(4):hover ul.pagedropdown {
 }
 
 .body .container .top .left img {
+	display: block;
 	width: 100%;
 	transition: all .5s;
 }
@@ -1224,6 +1225,7 @@ header nav.resnav > ul > li:nth-child(4):hover ul.pagedropdown {
 }
 
 .body .container .top .right .top img {
+	display: block;
 	width: 100%;
 	transition: all .5s;
 }
@@ -1272,6 +1274,7 @@ header nav.resnav > ul > li:nth-child(4):hover ul.pagedropdown {
 }
 
 .body .container .top .right .bot img {
+	display: block;
 	width: 100%;
 	height: 100%;
 	transition: all .5s;
