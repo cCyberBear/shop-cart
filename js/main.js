@@ -386,58 +386,70 @@ const rate = [
 
 const category = [
     {
-        "name":"Bathua Saag/Leaves",
-        "img":"http://demo.roadthemes.com/safira/electronic/wp-content/uploads/2020/09/3-400x400.jpg",
-        "type":"PHONE",
-        "star":"<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half-alt'></i><i class='fas fa-star-half-alt'></i>",
-        "uprice":"",
-        "sprice":"$115.00"
+      "id": 37,
+      "name":"Bathua Saag/Leaves",
+      "img":"http://demo.roadthemes.com/safira/electronic/wp-content/uploads/2020/09/3-400x400.jpg",
+      "type":"PHONE",
+      "star":"<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half-alt'></i><i class='fas fa-star-half-alt'></i>",
+      "uprice":"",
+      "price":115,
+      "sprice":"$115.00"
     },
     {
-        "name":"Bottol Gaurd (Lauki)",
-        "img":"http://demo.roadthemes.com/safira/electronic/wp-content/uploads/2020/09/9-400x400.jpg",
-        "sale":"Sale!",
-        "type":"BROAD BEANS",
-        "star":"<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i>",
-        "uprice":"$85.00",
-        "sprice":"$60.00"
+      "id": 38,
+      "name":"Bottol Gaurd (Lauki)",
+      "img":"http://demo.roadthemes.com/safira/electronic/wp-content/uploads/2020/09/9-400x400.jpg",
+      "sale":"Sale!",
+      "type":"BROAD BEANS",
+      "star":"<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i>",
+      "uprice":"$85.00",
+      "price":60,
+      "sprice":"$60.00"
     },
     {
-        "name":"Broccolo Local",
-        "img":"http://demo.roadthemes.com/safira/electronic/wp-content/uploads/2020/09/7-400x400.jpg",
-        "type":"PHONE",
-        "star":"<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half-alt'></i><i class='fas fa-star-half-alt'></i>",
-        "uprice":"",
-        "sprice":"$100.00"
+      "id": 39,
+      "name":"Broccolo Local",
+      "img":"http://demo.roadthemes.com/safira/electronic/wp-content/uploads/2020/09/7-400x400.jpg",
+      "type":"PHONE",
+      "star":"<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half-alt'></i><i class='fas fa-star-half-alt'></i>",
+      "uprice":"",
+      "price":100,
+      "sprice":"$100.00"
     },
     {
-        "name":"Cabbage Band Gobhi",
-        "img":"http://demo.roadthemes.com/safira/electronic/wp-content/uploads/2020/09/2-400x400.jpg",
-        "type":"PHONE",
-        "star":"<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half-alt'></i>",
-        "uprice":"",
-        "sprice":"$95.00"
+      "id": 40,
+      "name":"Cabbage Band Gobhi",
+      "img":"http://demo.roadthemes.com/safira/electronic/wp-content/uploads/2020/09/2-400x400.jpg",
+      "type":"PHONE",
+      "star":"<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half-alt'></i>",
+      "uprice":"",
+      "price":95,
+      "sprice":"$95.00"
     },
     {
-        "name":"Coiander Leaves",
-        "img":"http://demo.roadthemes.com/safira/electronic/wp-content/uploads/2020/09/6-400x400.jpg",
-        "sale":"Sale!",
-        "type":"BROAD BEANS",
-        "star":"<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i>",
-        "uprice":" ",
-        "sprice":" "
+      "id": 41,
+      "name":"Coiander Leaves",
+      "img":"http://demo.roadthemes.com/safira/electronic/wp-content/uploads/2020/09/6-400x400.jpg",
+      "sale":"Sale!",
+      "type":"BROAD BEANS",
+      "star":"<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i>",
+      "uprice":" ",
+      "price":0,
+      "sprice":" "
     },
     {
-        "name":"Eurppean Lemon Zest",
-        "img":"http://demo.roadthemes.com/safira/electronic/wp-content/uploads/2020/09/1-400x400.jpg",
-        "sale":"Sale!",
-        "type":"CRUCIFEROUS",
-        "star":"<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half-alt'></i>",
-        "uprice":"$80.00",
-        "sprice":"$70.00"
+      "id": 42,
+      "name":"Eurppean Lemon Zest",
+      "img":"http://demo.roadthemes.com/safira/electronic/wp-content/uploads/2020/09/1-400x400.jpg",
+      "sale":"Sale!",
+      "type":"CRUCIFEROUS",
+      "star":"<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star-half-alt'></i>",
+      "uprice":"$80.00",
+      "price":70,
+      "sprice":"$70.00"
     },
 ]
-
+  
 const bot = [
     {
         "name":"Bottol Gaurd (Lauki)",
@@ -517,6 +529,7 @@ const bot = [
     },
 
 ]
+//slide
 $(document).ready(function(){
   $(".owl-carousellll").owlCarousel({
       dots:true,
@@ -1736,7 +1749,7 @@ $(".all").click(function (e) {
           $(`
           <div class="box col-lg-2 col-lg-4 col-md-4 col-sm-6 col-sx-6">
           <div class="product">
-            <div class="item">
+            <div class="item" data-id=${val.id}>
                 <img src="${val.img}" alt="">
                 <div class="text">
                 <a href="" class="one">${val.type}</a>
@@ -1748,7 +1761,7 @@ $(".all").click(function (e) {
                 </div>
                 </div>
                 <div class="card flex">
-                <a href="">ADD TO CART</a>
+                <a href="" class = "add">ADD TO CART</a>
                 <div class="icon">
                     <a href=""><i class="far fa-heart"></i></a>
                     <a href=""><i class="fas fa-sync-alt"></i></a>
@@ -1769,7 +1782,7 @@ $(".all").click(function (e) {
         $(`
         <div class="box col-lg-2 col-lg-4 col-md-4 col-sm-6 col-sx-6">
         <div class="product">
-          <div class="item">
+          <div class="item" data-id=${val.id}>
               <img src="${val.img}" alt="">
               <div class="text">
               <a href="" class="one">${val.type}</a>
@@ -1781,7 +1794,7 @@ $(".all").click(function (e) {
               </div>
               </div>
               <div class="card flex">
-              <a href="">ADD TO CART</a>
+              <a href="" class="add">ADD TO CART</a>
               <div class="icon">
                   <a href=""><i class="far fa-heart"></i></a>
                   <a href=""><i class="fas fa-sync-alt"></i></a>
@@ -1896,8 +1909,11 @@ $(".all").click(function (e) {
       } else if(id > 12 && id <= 24) {
         const product = newproducts.find( val => val.id === id)
         cart.push( {...product, quantity: 1 });
-      } else {
-        const product = rate.find( (val) => val.id === id)
+      } else if(id > 24 && id <= 36) {
+        const product = rate.find( val => val.id === id)
+        cart.push( {...product, quantity: 1 });
+      }else {
+        const product = category.find( (val) => val.id === id)
         cart.push( {...product, quantity: 1 });
       }
     }
@@ -1986,9 +2002,11 @@ $(document).on("click",".fa-sync-alt", function (e) {
     } else if(id > 12 && id <= 24) {
       const product = newproducts.find( val => val.id === id)
       compareProducts.push( {...product, quantity: 1, description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat similique fugiat ipsam tenetur, iure at adipisci tempore voluptas nemo blanditiis tempora quae. Alias similique dolorum sed officiis fugiat provident."});
-
+    } else if(id > 24 && id <= 36) {
+      const product = rate.find( val => val.id === id)
+      compareProducts.push( {...product, quantity: 1, description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat similique fugiat ipsam tenetur, iure at adipisci tempore voluptas nemo blanditiis tempora quae. Alias similique dolorum sed officiis fugiat provident."});
     } else {
-      const product = rate.find( (val) => val.id === id)
+      const product = category.find( (val) => val.id === id)
       compareProducts.push( {...product, quantity: 1, description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat similique fugiat ipsam tenetur, iure at adipisci tempore voluptas nemo blanditiis tempora quae. Alias similique dolorum sed officiis fugiat provident."});
 
     }
@@ -2094,4 +2112,54 @@ compareProducts.map((val,idx)=> {
 $(".fa-times").click(function (e) { 
   e.preventDefault();
   $(".compare").fadeOut();
+});
+
+//dropdown responsive
+$('.home').click(function() {
+  $(".homeDropdown").slideToggle(500);
+});
+$('.g1').click(function() {
+  $(".g1dropdown").slideToggle(500);
+});
+$('.g2').click(function() {
+  $(".g2dropdown").slideToggle(500);
+});
+$('.shopp').click(function() {
+  $(".shopDropdown").slideToggle(500);
+});
+$('.s1').click(function() {
+  $(".s1dropdown").slideToggle(500);
+});
+$('.s2').click(function() {
+  $(".s2dropdown").slideToggle(500);
+});
+$('.s3').click(function() {
+  $(".s3dropdown").slideToggle(500);
+});
+$('.blog').click(function() {
+  $(".blogDropdown").slideToggle(500);
+});
+$('.b1').click(function   () {
+  $(".b1dropdown").slideToggle(500);
+});
+$('.b2').click(function() {
+  $(".b2dropdown").slideToggle(500);
+});
+$('.b3').click(function() {
+  $(".b3dropdown").slideToggle(500);
+});
+$('.page').click(function() {
+  $(".pageDropdown").slideToggle(500);
+});
+
+$(".rotate").click(function(){
+  $(this).toggleClass("down")  ; 
+ })
+//open and close option
+$(document).on("click",".fa-bars", function () {
+  $(".optionButton").css("transform", "translateX(0%)");
+});
+
+$(document).on("click",".close", function () {
+  $(".optionButton").css("transform", "translateX(-100%)");
 });

@@ -69,6 +69,7 @@ header .row nav.nav > ul {
 
 header .row nav.nav > ul > li {
 	font-weight: 700;
+	position: relative;
 	padding: 20px 0;
 	cursor: pointer;
 }
@@ -84,7 +85,7 @@ header .row nav.nav > ul > li a i {
 header .row nav.nav > ul > li .dropdown {
 	position: absolute;
 	z-index: 1000 !important;
-	top: 70px;
+	top: 100%;
 	display: flex;
 	padding: 30px;
 	transition: .4s;
@@ -124,7 +125,7 @@ header .row nav.nav > ul > li > ul.homedropdown li ul.grOne li a:hover {
 }
 
 header .row nav.nav > ul > li > ul.shopdropdown {
-	left: 18%;
+	left: 0;
 	width: 380px;
 }
 
@@ -154,7 +155,7 @@ header .row nav.nav > ul > li > ul.shopdropdown li ul.grOne li a:hover {
 }
 
 header .row nav.nav > ul > li > ul.blogdropdown {
-	left: 18%;
+	left: 0;
 	width: 380px;
 }
 
@@ -184,7 +185,7 @@ header .row nav.nav > ul > li > ul.blogdropdown li ul.grOne li a:hover {
 }
 
 header .row nav.nav > ul > li > ul.pagedropdown {
-	left: 30%;
+	left: 0;
 	width: 190px;
 }
 
@@ -241,6 +242,7 @@ header .row .temp {
 header .row form {
 	display: flex;
 	overflow: hidden;
+	overflow: visible;
 	border: 2px solid #0090f0;
 	border-radius: 30px;
 	background-color: white;
@@ -249,6 +251,7 @@ header .row form {
 }
 
 header .row form .left {
+	position: relative;
 	display: flex;
 	width: 100%;
 	margin-left: 3px;
@@ -260,6 +263,7 @@ header .row form .left .dropdown {
 	z-index: 1000 !important;
 	top: 0;
 	left: 50%;
+	display: none;
 	transition: .4s;
 	background: white;
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .25);
@@ -267,11 +271,11 @@ header .row form .left .dropdown {
 
 header .row form .left ul.alldropdown {
 	z-index: 100;
-	display: none;
+	top: 150%;
+	right: 0;
 	overflow-y: scroll;
 	height: 300px;
 	padding: 10px;
-	transform: translate(45%, 25%);
 }
 
 header .row form .left ul.alldropdown > li a {
@@ -342,6 +346,7 @@ header .row .contact .call {
 
 header .row .contact .heart {
 	margin-left: 40px;
+	transition: all .3s;
 	align-items: center;
 }
 
@@ -351,6 +356,10 @@ header .row .contact .heart:last-child {
 
 header .row .contact .heart i {
 	font-size: 25px;
+}
+
+header .row .contact .heart i:hover {
+	color: #0090f0;
 }
 
 header .row .contact .heart > p {
@@ -375,6 +384,10 @@ header .row .contact .shop:last-child {
 
 header .row .contact .shop i {
 	font-size: 25px;
+}
+
+header .row .contact .shop i:hover {
+	color: #0090f0;
 }
 
 header .row .contact .shop > p {
@@ -478,6 +491,7 @@ header nav.resnav > ul {
 
 header nav.resnav > ul > li {
 	font-weight: 700;
+	position: relative;
 	padding: 20px 0;
 	cursor: pointer;
 }
@@ -493,7 +507,7 @@ header nav.resnav > ul > li a i {
 header nav.resnav > ul > li .dropdown {
 	position: absolute;
 	z-index: 1000 !important;
-	top: 150px;
+	top: 100%;
 	display: flex;
 	padding: 30px;
 	transition: .4s;
@@ -533,7 +547,7 @@ header nav.resnav > ul > li > ul.homedropdown li ul.grOne li a:hover {
 }
 
 header nav.resnav > ul > li > ul.shopdropdown {
-	left: 10%;
+	left: 0;
 	width: 380px;
 }
 
@@ -563,7 +577,7 @@ header nav.resnav > ul > li > ul.shopdropdown li ul.grOne li a:hover {
 }
 
 header nav.resnav > ul > li > ul.blogdropdown {
-	left: 10%;
+	left: 0;
 	width: 380px;
 }
 
@@ -593,7 +607,7 @@ header nav.resnav > ul > li > ul.blogdropdown li ul.grOne li a:hover {
 }
 
 header nav.resnav > ul > li > ul.pagedropdown {
-	left: 25%;
+	left: 0;
 	width: 190px;
 }
 
@@ -795,7 +809,7 @@ header nav.resnav > ul > li:nth-child(4):hover ul.pagedropdown {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 50px;
+	height: 60px;
 	background: rgba(255, 255, 255, .856);
 }
 
@@ -809,36 +823,187 @@ header nav.resnav > ul > li:nth-child(4):hover ul.pagedropdown {
 	padding: 10px 0;
 }
 
+.scroll .ttemp .container .row {
+	overflow: visible;
+	align-items: center;
+}
+
 .scroll .ttemp .container .image img {
 	width: 50%;
 }
 
 .scroll .ttemp .container nav.fix ul {
 	width: 50%;
-	margin: 0 100px 0 50px;
 	justify-content: space-between;
 }
 
-.scroll .ttemp .container nav.fix ul li {
+.scroll .ttemp .container nav.fix ul > li {
 	font-weight: 700;
+	position: relative;
+	padding: 10px 0;
 	cursor: pointer;
 }
 
-.scroll .ttemp .container nav.fix ul li a {
+.scroll .ttemp .container nav.fix ul > li a {
 	color: black;
 }
 
-.scroll .ttemp .container nav.fix ul li i {
+.scroll .ttemp .container nav.fix ul > li a i {
 	padding-left: 5px;
 }
 
-.scroll .ttemp .container nav.fix ul li:nth-child(1) {
+.scroll .ttemp .container nav.fix ul > li .dropdown {
+	position: absolute;
+	z-index: 1000 !important;
+	top: 100%;
+	display: flex;
+	padding: 30px;
+	transition: .4s;
+	transform: rotateX(-90deg);
+	transform-origin: top left;
+	background: white;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .25);
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.homedropdown {
+	left: 0;
+	width: 380px;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.homedropdown li {
+	width: 50%;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.homedropdown li p {
+	padding: 5px 0;
+	color: black;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.homedropdown li ul.grOne li {
+	width: 100%;
+	padding: 5px 0;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.homedropdown li ul.grOne li a {
+	font-size: 12px;
+	font-weight: 500;
+	transition: all .5s;
+	color: #888;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.homedropdown li ul.grOne li a:hover {
+	color: #0090f0;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.shopdropdown {
+	left: 0;
+	width: 380px;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.shopdropdown li {
+	width: 33%;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.shopdropdown li p {
+	padding: 5px 0;
+	color: black;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.shopdropdown li ul.grOne li {
+	width: 100%;
+	padding: 5px 0;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.shopdropdown li ul.grOne li a {
+	font-size: 12px;
+	font-weight: 500;
+	transition: all .5s;
+	color: #888;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.shopdropdown li ul.grOne li a:hover {
+	color: #0090f0;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.blogdropdown {
+	left: 0;
+	width: 380px;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.blogdropdown li {
+	width: 33%;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.blogdropdown li p {
+	padding: 5px 0;
+	color: black;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.blogdropdown li ul.grOne li {
+	width: 100%;
+	padding: 5px 0;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.blogdropdown li ul.grOne li a {
+	font-size: 12px;
+	font-weight: 500;
+	transition: all .5s;
+	color: #888;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.blogdropdown li ul.grOne li a:hover {
+	color: #0090f0;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.pagedropdown {
+	left: 0;
+	width: 190px;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.pagedropdown li {
+	width: 100%;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.pagedropdown li p {
+	padding: 5px 0;
+	color: black;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.pagedropdown li ul.grOne li {
+	width: 100%;
+	padding: 5px 0;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.pagedropdown li ul.grOne li a {
+	font-size: 12px;
+	font-weight: 500;
+	transition: all .5s;
+	color: #888;
+}
+
+.scroll .ttemp .container nav.fix ul > li > ul.pagedropdown li ul.grOne li a:hover {
+	color: #0090f0;
+}
+
+.scroll .ttemp .container nav.fix ul .home {
 	color: #2598f1;
 	border-bottom: #0090f0 solid 2px;
 }
 
-.scroll .ttemp .container nav.fix ul li:nth-child(1) a {
-	color: #2598f1;
+.scroll .ttemp .container nav.fix ul > li:nth-child(1):hover ul.homedropdown {
+	transform: perspective(500px) rotateX(0deg);
+}
+
+.scroll .ttemp .container nav.fix ul > li:nth-child(2):hover ul.shopdropdown {
+	transform: perspective(500px) rotateX(0deg);
+}
+
+.scroll .ttemp .container nav.fix ul > li:nth-child(3):hover ul.blogdropdown {
+	transform: perspective(500px) rotateX(0deg);
+}
+
+.scroll .ttemp .container nav.fix ul > li:nth-child(4):hover ul.pagedropdown {
+	transform: perspective(500px) rotateX(0deg);
 }
 
 .scroll .ttemp .container .icon {
@@ -868,6 +1033,113 @@ header nav.resnav > ul > li:nth-child(4):hover ul.pagedropdown {
 	color: white;
 	border-radius: 15px;
 	background-color: #0090f0;
+}
+
+.scroll .ttemp .container .icon .shop {
+	position: relative;
+	margin-left: 40px;
+	align-items: center;
+}
+
+.scroll .ttemp .container .icon .shop:last-child {
+	margin-left: 20px;
+}
+
+.scroll .ttemp .container .icon .shop i {
+	font-size: 25px;
+}
+
+.scroll .ttemp .container .icon .shop i:hover {
+	color: #0090f0;
+}
+
+.scroll .ttemp .container .icon .shop > p {
+	font-size: 11px;
+	display: block;
+	margin: 5px;
+	padding: 3px 5px;
+	color: white;
+	border-radius: 15px;
+	background-color: #0090f0;
+}
+
+.scroll .ttemp .container .icon .shop .cartDown {
+	position: absolute;
+	z-index: 1000;
+	top: 100%;
+	right: 0;
+	display: none;
+	overflow-y: scroll;
+	width: 350px;
+	max-height: 500px;
+	padding: 30px;
+	background: white;
+	box-shadow: 0 0 10px -3px #333;
+}
+
+.scroll .ttemp .container .icon .shop .cartDown ul li {
+	display: flex;
+	padding: 10px 0;
+	border-bottom: solid #888 1px;
+	justify-content: space-between;
+}
+
+.scroll .ttemp .container .icon .shop .cartDown ul li .image {
+	width: 30%;
+}
+
+.scroll .ttemp .container .icon .shop .cartDown ul li .image img {
+	width: 100%;
+}
+
+.scroll .ttemp .container .icon .shop .cartDown ul li .text {
+	width: 60%;
+	height: 100%;
+	margin-top: 10px;
+}
+
+.scroll .ttemp .container .icon .shop .cartDown ul li .text a {
+	display: block;
+	margin-bottom: 10px;
+	color: black;
+}
+
+.scroll .ttemp .container .icon .shop .cartDown ul li .text p {
+	font-size: 17px;
+	font-weight: 700;
+}
+
+.scroll .ttemp .container .icon .shop .cartDown ul li .text p span {
+	font-size: 15px;
+	font-weight: normal;
+}
+
+.scroll .ttemp .container .icon .shop .cartDown ul li .close {
+	display: flex;
+	color: #0090f0;
+	justify-content: flex-end;
+}
+
+.scroll .ttemp .container .icon .shop .cartDown ul li .close p {
+	cursor: pointer;
+}
+
+.scroll .ttemp .container .icon .shop .cartDown button {
+	font-size: 13px;
+	width: 100%;
+	margin: 5px 0;
+	padding: 12px 0;
+	color: white;
+	border-radius: 25px;
+	background: #0090f0;
+}
+
+.scroll .ttemp .container .icon .shop .cartDown .total {
+	display: flex;
+	margin-bottom: 20px;
+	padding: 20px 0;
+	border-bottom: #888 solid 1px;
+	justify-content: space-between;
 }
 
 .body .container .top {
@@ -1964,6 +2236,137 @@ footer .copyright .container img {
 	color: black;
 }
 
+.optionButton {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	overflow-y: scroll;
+	width: 260px;
+	height: 100vh;
+	transition: all .5s;
+	transform: translateX(-100%);
+	background: rgba(255, 255, 255, .95);
+}
+
+.optionButton::-webkit-scrollbar {
+	display: none;
+}
+
+.optionButton .close {
+	display: flex;
+	padding: 10px;
+	justify-content: flex-end;
+}
+
+.optionButton form {
+	display: flex;
+	margin: 10px;
+	padding: 10px;
+	border: #adadad 1px solid;
+	border-radius: 30px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.optionButton form input {
+	max-width: 185px !important;
+	padding-left: 5px;
+}
+
+.optionButton form i {
+	display: block;
+	color: #adadad;
+}
+
+.optionButton nav > ul > li {
+	position: relative;
+}
+
+.optionButton nav > ul > li ul.dropdownOut {
+	display: none;
+}
+
+.optionButton nav > ul > li ul.dropdownOut li {
+	position: relative;
+	padding-left: 10px;
+}
+
+.optionButton nav > ul > li ul.dropdownOut li::before {
+	position: absolute;
+	top: 0;
+	display: block;
+	width: 85%;
+	height: 1px;
+	margin-left: 10px;
+	content: '';
+	background-color: #adadad;
+}
+
+.optionButton nav > ul > li ul.dropdownOut li ul.dropdownIn {
+	display: none;
+}
+
+.optionButton nav > ul > li ul.dropdownOut li ul.dropdownIn li a {
+	display: block;
+	padding: 15px;
+	color: #666;
+}
+
+.optionButton nav > ul > li::before {
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 90%;
+	height: 1px;
+	margin-left: 10px;
+	content: '';
+	background-color: #adadad;
+}
+
+.optionButton nav > ul > li .line {
+	display: flex;
+	padding: 15px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.optionButton nav > ul > li .line a {
+	display: block;
+	color: #666;
+}
+
+.optionButton nav > ul > li .line i {
+	font-size: 10px;
+	display: block;
+	margin-right: 5px;
+	transition: all .3s;
+	color: #666;
+}
+
+.optionButton nav > ul > li .pageDropdown a {
+	display: block;
+	padding: 15px;
+	color: #666;
+}
+
+.optionButton nav > ul .line:nth-child(6)::before {
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 0;
+	height: 0;
+	background-color: #adadad;
+}
+
+.rotate {
+	transition: all .3s linear;
+}
+
+.rotate.down {
+	transform: rotate(90deg);
+}
+
 @media (min-width: 1500px) {
 
 .row .col-xl-1 {
@@ -2369,13 +2772,26 @@ header nav.resnav {
 	font-size: 10px;
 }
 
-.scroll {
+.scroll .ttemp {
 	display: none;
 }
 
-.scroll .container {
-	width: 1200px;
-	margin-left: -600px;
+.scroll .ttemp .container {
+	width: 720px;
+	margin-left: -360px;
+}
+
+.scroll .ttemp .container nav ul li {
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	margin-right: 20px;
+}
+
+.scroll .ttemp .container nav ul li a {
+	display: block;
+	width: 100%;
+	margin-right: 20px;
 }
 
 .body .container .mid-one .text {
@@ -2434,6 +2850,10 @@ header .row .img {
 }
 
 .utop .option {
+	display: none;
+}
+
+.scroll .ttemp {
 	display: none;
 }
 
