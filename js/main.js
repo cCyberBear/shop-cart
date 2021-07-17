@@ -630,7 +630,7 @@ $(".all").click(function (e) {
   }
 });
 
-//reder product
+//render product
   products.map((val,idx)=> {
       if(idx===0 || idx%2===0){
           var next = products[idx+1];
